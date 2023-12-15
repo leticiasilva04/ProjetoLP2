@@ -6,6 +6,8 @@
 
         <title>@yield('title')</title>
 
+        <link rel="icon" type="image/png" href="/img/iconadocão.png">
+
         <!-- Fonte do Google -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +33,7 @@
                 <a href="/" class="nav-link">Animais</a>
               </li>
               <li class="nav-item">
-                <a href="/events/create" class="nav-link">Cadastrar animal</a>
+                <a href="/events/create" class="nav-link">Divulgar animal</a>
               </li>
               @auth
               <li class="nav-item">

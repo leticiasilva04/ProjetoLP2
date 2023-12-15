@@ -16,8 +16,8 @@
       <div id="info-container" class="col-md-6">
         <h1>{{ $event->title }}</h1>
         <p class="event-city"><ion-icon name="location-outline"></ion-icon> {{ $event->city }}</p>
-        <p class="events-participants"><ion-icon name="people-outline"></ion-icon> {{ count($event->users) }} Interessados</p>
-        <p class="event-owner"><ion-icon name="star-outline"></ion-icon> {{ $eventOwner['name'] }}</p>
+        <p class="events-participants"><ion-icon name="people-outline"></ion-icon> {{ count($event->users) }} pessoa(s) interessada(s)</p>
+        <p class="event-owner"><ion-icon name="star-outline"></ion-icon>Divulgado por: {{ $eventOwner['name'] }}</p>
         @if(!$hasUserJoined)
           <form action="/events/join/{{ $event->id }}" method="POST">
             @csrf

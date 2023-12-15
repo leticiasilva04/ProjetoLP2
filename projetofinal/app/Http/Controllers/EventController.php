@@ -113,7 +113,15 @@ class EventController extends Controller
 
     public function destroy($id) {
 
-        Event::findOrFail($id)->delete();
+          // Buscar o evento pelo ID
+    $event = Event::findOrFail($id);
+
+    // Excluir as relações na tabela event_user
+    $event->users()->detach();
+
+    // Agora, você pode excluir o evento
+    $event->delete();
+
 
         return redirect('/dashboard')->with('msg', 'O animal foi retirado da lista de adoção!');
 

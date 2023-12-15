@@ -45,7 +45,7 @@
         <input type="checkbox" name="items[]" value="Deficiente" {{ in_array('Deficiente', $event->items) ? "checked" : "" }}> Deficiente
       </div>
       <div class="form-group">	
-        <input type="checkbox" name="items[]" value="Saudável" {{ in_array('Saudável', $event->items) ? "checked" : "" }}> Saudável
+        <input type="checkbox" name="items[]" value="N/A" {{ in_array('N/A', $event->items) ? "checked" : "" }}> Nenhuma das Anteriores
       </div>
     </div>
 

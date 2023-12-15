@@ -37,7 +37,7 @@
         </tbody>
     </table>
     @else
-    <p>Você ainda não tem animais, <a href="/events/create">cadastrar animal</a></p>
+    <p>Você ainda não cadastrou nenhum animal, <a href="/events/create">clique aqui para cadastrar um animal</a></p>
     @endif
 </div>
 <div class="col-md-10 offset-md-1 dashboard-title-container">
